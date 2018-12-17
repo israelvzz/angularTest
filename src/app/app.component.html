@@ -1,20 +1,83 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
+<slideshow [height]="height"
+[minHeight]="'525px'" #slideshow [imageUrls]="imageUrlArray" ></slideshow>
+
+<div class="general">
+    <h2>Ecosistemas de México</h2>
+  <div class="container">
+    <div class="item">
+      <p>
+      Un ecosistema esta formado por el conjunto de seres vivos que ocupan un espacio natural y las relaciones que se establecen entre ellos y el medio en el que viven.
+      Es decir, esta formado por:</p>
+      <p>
+      La biocenosis o comunidad biológica es el conjunto de poblaciones que viven en un área determinada.
+     </p>
+      <p>
+      El biotopo es el lugar o medio físico ocupado por una comunidad, que se caracteriza por unas condiciones ambientales bien definidas.
+      </p>
+    </div>
+    <div class="item">
+      <p>
+          México, está entre los 17 países con mayor biodiversidad. Esto se debe a sus diferentes climas, relieves y de zonas biogeográficas,
+          que definen sus múltiples ecosistemas.
+      </p>
+      <p>
+        Los principales ecosistemas terrestres de México son: 
+        Bosques templados, Bosques nublados, Matorrales, Pastizales, Selvas húmedas y Selvas secas.
+        Los marinos son:
+        Lagunas costeras, Manglares, Arrecifes de coral y Bosques de algas gigantes.
+
+      </p>
+    </div>
+    <div class="item">
+        <p>
+            <img [src]="imagePath">
+        </p>
+        
+    </div>
+    <div class="item">
+        <p>
+            <iframe width="430" height="200" [src]="urlSaneada" frameborder="0" allowfullscreen></iframe>
+        </p>
+        
+    </div>
+    
+  </div>
+
+  <h2 class="curioso">Curiosidades</h2>
+  <mat-tab-group>
+      <mat-tab label="País megadiverso">
+      <p>
+          Un país megadiverso es aquel que posee la mayor cantidad de diversidad de animales y plantas.
+          Los 12 que conforman el Grupo de Países Megadiversos (Brasil, China, Costa Rica, Colombia,
+          Ecuador, India, Indonesia, Kenia, México, Perú, Sudáfrica y Venezuela).
+      </p> </mat-tab>
+      <mat-tab label="Quinto lugar"> 
+        <p>
+          En nuestro territorio encontramos casi todos los climas del planeta, 
+          y la flora y fauna que de ellos resultan. Si a ello le sumamos su topografía y geología, 
+          encontraremos prácticamente todos los ecosistemas terrestres existentes.
+          </p>
+       </mat-tab>
+      <mat-tab label="180 mil a 216 mil especies">
+        <p>
+            Nuestro país cuenta con entre 10% y 12% de las especies registradas en el mundo.
+            Se calcula que México posee alrededor de 23 mil 424 especies de plantas, 535 especies 
+            de mamíferos, 804 especies de reptiles, 361 de anfibios y mil 107 especies de aves, 
+            según el Cuarto Informe Nacional de México al Convenio sobre Diversidad Biológica.
+        </p>
+      </mat-tab>
+      <mat-tab label="Biodiversidad endémica"> 
+        <p>
+        Muchas especies son exclusivamente mexicanas. 
+        Entre 50 y 60% de las especies conocidas de plantas del mundo se encuentran solo en nuestro 
+        territorio: 21 especies de pinos, 146 de agaves y 715 de cactáceas. Además, hay 163 especies de 
+        peces de agua dulce (42% del total mundial), 174 de anfibios (48% del total), 368 de reptiles (45%
+         del total), 125 de aves (11% del total) y 169 de mamíferos (31% del total). 
+        </p>
+      </mat-tab>
+    </mat-tab-group>
+
+
+
 </div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/cli">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
 

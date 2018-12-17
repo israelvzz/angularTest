@@ -1,0 +1,51 @@
+h2{
+    color: #fff;
+}
+
+.general{
+    display: block;
+    margin: auto;
+    width: 80%; 
+    
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 45% 45%;
+    grid-template-rows: 30% 45%;
+    grid-gap: 10px;
+    border-top: 2px solid #fff;
+    padding: 5px;
+    justify-content: center;
+}
+
+.item{
+    background-color: rgba(255, 255, 255, .3);
+    /*border: 2px solid black;*/
+    border-radius: 10px;
+    box-shadow: 1px 1px #fff;
+    overflow-y: hidden;
+    padding: 4px
+}
+
+.item p{
+    padding: .5 %;
+    margin: 0 .1cm 0 .1cm;
+    font-size: 14px;
+}
+
+.item p iframe{
+    width: 100%
+}
+
+.item p img{
+    width: 100%;
+}
+.curioso{
+    border-bottom: 2px solid #fff;
+    
+}
+
+.mat-tab-label-content{
+    background-color: gray;
+}
